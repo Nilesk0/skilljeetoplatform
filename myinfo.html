@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Skill Jito | MY Info</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<style>
+a[data-toggle="collapse"] {
+	position: inherit;
+    color: #000;
+    width: 100%;
+    display: block
+}
+.panel-title > a:before {
+float: right !important;
+    font-family: FontAwesome;
+    content: "\f068";
+    padding-right: 5px;
+    padding-top: 3px;
+    font-size: 12px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.container.myinfomain {
+    padding-top: 70px;
+	padding-bottom: 15px;
+}
+.panel-heading.infopanelhead {
+    border: 1.9px solid #0042d2;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: #EDF2FB;
+    box-shadow: inset 1px 2px 3px #d2d2d2;
+}.panel-heading.infopanelhead2 {
+    border: 1.9px solid #0042d2;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: #EDF2FB;
+    box-shadow: inset 1px 2px 3px #d2d2d2;
+}
+.panel-title.infoinnertitle {
+    line-height: 1px;
+}
+
+</style>
+<body>
+	<div class="overlay"></div>
+	<div class="limiter">
+		<div class="infoinner hcontainer-login100">
+			<div class="wrap-login100s" style="display:block;">
+			 <div class="wrapper">
+            <div class="content">
+                <nav class="navbar navbar-default myinfoheader">
+                    <div class="container-fluid">
+						<div class="infotitle"><a href="home.html" id=""><i id="myinfo" class="fas fa-arrow-left"></i></a>MY Info</div>
+					</div>
+                </nav>
+        </div>
+				
+               <!-- Tabs -->
+<div class="container myinfomain">
+<div class="row">
+<div class="col-md-3">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading infopanelhead" role="tab" id="headingOne">
+             <h4 class="panel-title infoinnertitle">
+        <a class="collapsed accordion-toggleinfo" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Personal Information
+        </a>
+      </h4>
+
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body innerform">
+				<form class="form-horizontal" role="form">
+                <div class="form-group">
+                 <!--  <label for="firstName" class="col-sm-3 control-label">FulL Name *</label> -->
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="FulL Name*" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                   <!--  <label for="email" class="col-sm-3 control-label">Email* </label> -->
+                    <div class="col-sm-9">
+                        <input type="Number" id="email" placeholder="Mobile Number" class="form-control" onkeypress="return this.value.length < 10;" oninput="if(this.value.length>=10) { this.value = this.value.slice(0,10); }">
+                    </div>
+                </div>
+               <!--    <div class="form-group">
+                   <label for="password" class="col-sm-3 control-label">Password*</label> -->
+                    <!--  <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+              <div class="form-group">
+                    <!-- <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div> -->
+                  <div class="form-group">
+                   <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control">
+                    </div>
+                </div> 
+			<div class="form-group">
+          <label class="control-label col-sm-3">Gender</label> 
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                               <label class="form-check form-check-inline">
+								<input class="form-check-input gender-input" type="radio" name="gender" value="option1">
+								<span class="form-check-label"> Male </span>
+								</label>
+								<label class="form-check form-check-inline">
+								<input class="form-check-input gender-input" type="radio" name="gender" value="option2">
+								<span class="form-check-label">Female</span>
+								</label>
+							</div>
+                        </div>
+                    </div>
+                </div> 
+               <!--  <div class="form-group">
+                    <!-- <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label> 
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+                        <!-- <span class="help-block">Your phone number won't be disclosed anywhere </span> 
+                    </div>
+                </div> -->
+				<!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 form-switch">
+                     <span class="form-check-label">Allow Notification</span> 
+						<!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+						<!-- <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"> -->
+						<label class="switch">
+						<input type="checkbox">
+						<span class="sliderveri round"></span>
+						</label>
+                    </div>
+                </div>
+			<!-- 	<div class="form-group">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> 
+                    <div class="col-sm-9">
+                        <input type="text" id="address" placeholder="Address" class="form-control">
+                    </div>
+                </div>
+				 -->
+				<div class="form-grou">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+                    <div class="col-sm-9 selectarea">
+                       <label for="doc-select" class="control-label">Document Type</label> 
+						<select id="docmentselector" style="outline:none;">
+						<option value="" style="opacity:0.8;">Select Document</option>
+						<option value="PANCARD">PAN CARD</option>
+						<option value="ADHARCARD">ADHAR CARD</option>
+						</select>
+                    </div>
+					<div class="form-group"  style="">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+					 <!-- <label class="slectdoc" for="aadhar">Enter Number</label>  -->
+                    <div class="col-sm-9">
+                        <input type="number" id="aadhar" placeholder="Enter Number" class="form-control">
+                    </div>
+                </div>
+				<div class="form-group hiddendocinput" style="display:none;">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+					 <label for="pan">Enter Pan Card No.</label> 
+                    <div class="col-sm-9">
+                        <input type="text" id="pan" placeholder="" class="form-control">
+                    </div>
+                </div>
+						<div class="form-group">
+						   <div class="col-sm-6">
+						<div class="input-group rounded-pill shadow-sm">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                <label id="upload-label" for="upload" class="control-label">Upload Image*</label>
+                <div class="input-group-append">
+                    <label for="upload" class="cameralab"> <i class="fa fa-camera mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">	</small></label>
+                </div>
+            </div>
+			  <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+
+					</div>
+					</div >
+					</div>
+					<div class="form-grou">
+					 <div class="col-sm-9 selectarea">
+                     <label class="control-label">Residence Address</label> 
+						<select id="docmentselector" style="outline:none;">
+						<option value="Vikhroli">Vikhroli</option>
+						<option value="Ghatkoper">Ghatkoper</option>
+						<option value="Mulund">Mulund</option>
+						</select>
+                    </div>
+					</div>
+					<div class="form-grou">
+					 <div class="col-sm-9 selectarea">
+                     <label class="control-label">City</label> 
+						<select id="docmentselector" style="outline:none;">
+						<option value="Mumbai">Mumbai</option>
+						<option value="Nashik">Nashik</option>
+						<option value="Pune">Pune</option>
+						</select>
+                    </div>
+					</div>
+					   <div class="form-grou">
+                 <!--  <label for="firstName" class="col-sm-3 control-label">FulL Name *</label> -->
+                    <div class="col-sm-9">
+					<label class="control-label">Pincode</label> 
+                        <input type="number" id="firstName" placeholder="4000151" class="form-control">
+                    </div>
+                </div>
+					<div class="form-grou mt-2">
+					 <div class="col-sm-9 selectarea">
+                     <label class="control-label">State</label> 
+						<select id="docmentselector" style="outline:none;">
+						<option value="Maharastra">Maharastra</option>
+						<option value="Goa">Goa</option>
+						<option value="Pune">Uttar Pradesh</option>
+						</select>
+                    </div>
+					</div>
+				<div class="form-group selectarea">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+                    <div class="col-sm-9">
+					   <button type="submit" class="btn btn-primary btn-block updateprofile">UPDATE PROFILE</button>
+					 <button type="submit" class="logout"><i class="fas fa-power-off"></i>Logout</button>
+                    </div>
+                </div>
+                
+			<!-- 	<div class="form-grou">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9 selectarea">
+                       <!--  <label for="pet-select">City</label> 
+						<select name="country" id="country-select" style="outline:none;">
+						<option value="" style="opacity:0.8;">Country</option>
+						<option value="India">India</option>
+						<option value="SriLanka">SriLanka</option>
+						<option value="thailand">Thailand</option>
+						</select>
+                    </div>-->
+			
+				
+               
+            </form>
+			</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading infopanelhead2" role="tab" id="headingTwo">
+             <h4 class="panel-title infoinnertitle">
+        <a class="collapsed accordion-toggleinfo2" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Bank Information
+        </a>
+      </h4>
+
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body innerform">
+			<form class="form-horizontal">
+				<div class="col-12 myinfo_hidediv">
+			<div class="row">
+				<div class="col-12">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder="Bank Name *" />
+					<!--   <span class="floating-label control-label">Bank Name *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder="A/c Holder Name *"  />
+					 <!--  <span class="floating-label control-label">A/c Holder Name *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder="Type of A/c *" />
+					  <!-- <span class="floating-label control-label">Type of A/c *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder=" A/c Number *" />
+					  <!-- <span class="floating-label control-label"> A/c Number *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder="IFSC Code *" />
+					<!--   <span class="floating-label control-label">IFSC Code *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder="Branch Address *" />
+					<!--   <span class="floating-label control-label">Branch *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="user-input-wrp">
+					  <input type="text" class="form-control inputText" placeholder="City *" />
+					 <!--  <span class="floating-label control-label">City *</span> -->
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div class="myinfo_viwphto_div">
+						<div class="input-group rounded-pill shadow-sm">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                <label id="upload-label" for="upload" class="control-label">Upload Cancel Cheque & Passbook*</label>
+                <div class="input-group-append">
+                    <label for="upload" class="cameralab"> <i class="fa fa-camera mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">	</small></label>
+                </div>
+					</div>
+					<div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+				<div class="form-group selectarea">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+                    <div class="col-sm-9">
+					   <button type="submit" class="btn btn-primary btn-block updateprofile">UPDATE PROFILE</button>
+                    </div>
+			</div>
+			</div>
+		</div>
+			</div>
+				</form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ./Tabs -->
+       
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	
+	<!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	<script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+					$(".accordion-toggleinfo").on('click', function(e){
+					<!-- $(".infopanelhead").toggleClass("border-bottom",'none'); -->
+					<!-- $(".infopanelhead").toggleClass("border-radius",'5px 5px 0px 0px'); -->
+					$(".infopanelhead").toggleClass("borderhidden");
+					$(".form-horizontal").toggleClass("bordertop");
+					e.preventDefault();
+					});
+					
+					$(".accordion-toggleinfo2").on('click', function(e){
+					<!-- $(".infopanelhead").toggleClass("border-bottom",'none'); -->
+					<!-- $(".infopanelhead").toggleClass("border-radius",'5px 5px 0px 0px'); -->
+					$(".infopanelhead2").toggleClass("borderhidden2");
+					$(".form-horizontal").toggleClass("bordertop");
+					e.preventDefault();
+					});
+
+						<!-- $(".accordion-toggleinfo2").on('click', function(e){ -->
+					<!-- <!-- $(".infopanelhead").toggleClass("border-bottom",'none'); --> -->
+					<!-- <!-- $(".infopanelhead").toggleClass("border-radius",'5px 5px 0px 0px'); --> -->
+					<!-- $(".infopanelhead").removeClass("borderhidden"); -->
+					<!-- $(".infopanelhead").toggleClass("borderhidden2"); -->
+					<!-- $(".form-horizontal").toggleClass("bordertop"); -->
+					<!-- e.preventDefault(); -->
+					<!-- }); -->
+					
+					<!-- $(document).on('change','#docmentselector',function(){ -->
+        <!-- $(this).find("option:selected").each(function(){ -->
+		<!-- debugger; -->
+            <!-- var optionValue = $(this).attr("value"); -->
+            <!-- if(optionValue){ -->
+                <!-- $(".hiddendocinput").not("." + optionValue).hide(); -->
+                <!-- $("." + optionValue).show(); -->
+            <!-- } else{ -->
+                <!-- $(".hiddendocinput").hide(); -->
+            <!-- } -->
+        <!-- }); -->
+    <!-- }).change(); -->
+
+            });
+			
+			
+			    <!-- $(function() { -->
+        <!-- $('#docmentselector').change(function(){ -->
+            <!-- $('.hiddendocinput').hide(); -->
+            <!-- $('#' + $(this).val()).show(); -->
+        <!-- }); -->
+    <!-- }); -->
+
+/*  ==========================================
+    SHOW UPLOADED IMAGE
+* ========================================== */
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imageResult')
+                .attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$(function () {
+    $('#upload').on('change', function () {
+        readURL(input);
+    });
+});
+
+/*  ==========================================
+    SHOW UPLOADED IMAGE NAME
+* ========================================== */
+var input = document.getElementById( 'upload' );
+var infoArea = document.getElementById( 'upload-label' );
+
+input.addEventListener( 'change', showFileName );
+function showFileName( event ) {
+  var input = event.srcElement;
+  var fileName = input.files[0].name;
+  infoArea.textContent = 'File name: ' + fileName;
+}
+        </script>
+
+</body>
+</html>

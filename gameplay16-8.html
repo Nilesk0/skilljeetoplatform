@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Skill Jeeto</title>
+	 <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	  
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<style>
+.confetti {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    background: #2600f5;
+}
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #ffd300;
+    top: 0;
+    opacity: 0;
+}
+.confetti-piece:nth-child(1) {
+    left: 7%;
+    -webkit-transform: rotate(-40deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 182ms;
+    -webkit-animation-duration: 1116ms;
+}
+.confetti-piece:nth-child(2) {
+    left: 14%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 161ms;
+    -webkit-animation-duration: 1076ms;
+}
+.confetti-piece:nth-child(3) {
+    left: 21%;
+    -webkit-transform: rotate(-51deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 481ms;
+    -webkit-animation-duration: 1103ms;
+}
+.confetti-piece:nth-child(4) {
+    left: 28%;
+    -webkit-transform: rotate(61deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 334ms;
+    -webkit-animation-duration: 708ms;
+}
+.confetti-piece:nth-child(5) {
+    left: 35%;
+    -webkit-transform: rotate(-52deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 302ms;
+    -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(6) {
+    left: 42%;
+    -webkit-transform: rotate(38deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 180ms;
+    -webkit-animation-duration: 1168ms;
+}
+.confetti-piece:nth-child(7) {
+    left: 49%;
+    -webkit-transform: rotate(11deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 395ms;
+    -webkit-animation-duration: 1200ms;
+}
+.confetti-piece:nth-child(8) {
+    left: 56%;
+    -webkit-transform: rotate(49deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 14ms;
+    -webkit-animation-duration: 887ms;
+}
+.confetti-piece:nth-child(9) {
+    left: 63%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 149ms;
+    -webkit-animation-duration: 805ms;
+}
+.confetti-piece:nth-child(10) {
+    left: 70%;
+    -webkit-transform: rotate(10deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 351ms;
+    -webkit-animation-duration: 1059ms;
+}
+.confetti-piece:nth-child(11) {
+    left: 77%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 307ms;
+    -webkit-animation-duration: 1132ms;
+}
+.confetti-piece:nth-child(12) {
+    left: 84%;
+    -webkit-transform: rotate(42deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 464ms;
+    -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(13) {
+    left: 91%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 429ms;
+    -webkit-animation-duration: 818ms;
+}
+.confetti-piece:nth-child(odd) {
+    background: #7431e8;
+}
+.confetti-piece:nth-child(even) {
+    z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+    width: 5px;
+    height: 12px;
+    -webkit-animation-duration: 2000ms;
+}
+.confetti-piece:nth-child(3n) {
+    width: 3px;
+    height: 10px;
+    -webkit-animation-duration: 2500ms;
+    -webkit-animation-delay: 1000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+  background: red;
+}
+@-webkit-keyframes makeItRain {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {-webkit-transform: translateY(350px);}
+}
+
+@media only screen and (orientation:landscape){
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+	overflow:hidden;
+  }
+}
+</style>
+<body>
+
+	 <div class="overlay">
+	 	<div class="confetti" style="display:none;">
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+</div>
+	 </div>
+	<div class="limiter">
+		<div class="hcontainer-login100 hcontainer-gameplay100">
+		
+			<div class="wrap-login100s" style="display:block;">
+			 <div class="wrapper">
+            <!-- Sidebar Holder -->
+             <nav id="sidebar">
+                <div id="dismiss">
+                    <!-- <i class="glyphicon glyphicon-arrow-left"></i> -->
+					<i class="fas fa-angle-left"></i>
+                </div>
+                <div class="sidebar-header">
+                   <div class="userimg">
+						<!-- <i class="fas fa-user"></i> -->
+						<img src="images/user.jpg" alt="logo">
+						 </div>
+				   <div class="username">
+						<span>Welcome</span><span class="darkblue">abc@1234</span>
+						<span>+10000000</span>
+				   </div>
+               
+				</div>
+                <ul class="list-unstyled components">
+				 <li class="">
+                        <a href="myinfo.html"><img src="images/myinfo.svg" alt="logo">My Info</a>
+                      <!--   <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
+                      <!--  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-wallet"></i>My Wallet <i class="fas fa-angle-down text-right"></i></a>
+                         <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul> -->
+						 <a href="mybalance.html"><img src="images/menuwallet.svg" alt="mywallet">My Balance <span class="float-right darkblue"><b>&#8377;10000/-</b></span></a>
+                    </li>
+                    <li>
+                        <a class="" href="withdrawalstatus.html"><img src="images/withdrawal.svg" alt="Withdrawal">Withdrawal Status</a>
+                    </li>
+					<li>
+                        <a class="border-botom" href="myselection.html"><img src="images/myselection.svg" alt="myselection">My Selection</a>
+                    </li>
+                    <li>
+                        <a class="border-botom" href="aboutus.html"><img src="images/menuaboutus.svg" alt="aboutus">About Us</a>
+                    </li> 
+					<li>
+                        <a class="" href="#"><i class="fas fa-gamepad menuhtp"></i>How to Play</a>
+                    </li>
+					<li>
+                        <a href="helpsupport.html"><img src="images/helpsupport.svg" alt="helpsupport">Help & Support</a>
+                    </li>
+					<li>
+                        <a href="#"><i class="fas fa-info-circle"></i>FAQs</a>
+                    </li>
+                </ul>
+				<!-- <div class="sidebar-bottom">
+                    <a> Version:<span>10.00000</span></a>
+                    <a> Update<span></span></a>
+                </div>  -->
+            </nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+						<!-- <b>MY BALANCE</b> -->
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                               <!--  <i class="glyphicon glyphicon-align-left"></i> -->
+							   <i class="fas fa-bars"></i><!-- 
+                                <span>Open Sidebar</span> -->
+                            </button>
+							<div class="user_img"><a href="#"><img src="images/user.jpg" alt="user"></a></div>
+							<div class="centerlogo_img"><a href="home.html"><img src="images/centerlogo.png" alt="centerlogo"></a></div>
+							<div class="bellicon"><a href="#"><img src="images/bellicon.png" alt="bellicon"><span class="badge">9+</span></a></div>
+							<h3 class="mybal">My Balance</h3>
+							<div class="addwallet"><a href=""><span class="">&#8377;10000/-</span><i class="fas fa-wallet"></i></a></div>
+                        </div>
+                      <!--   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </nav>
+				<section class="playscreenmain">
+					<div class="prizeinfo">
+							<table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="1">Per Spot Selection<span>&#8377;10/-</span></td>
+											<td class="" style="float: right;">Prize for each right Selection <span>&#8377;90/-</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+					</div>	
+					<div class="outcome">
+							<table class="table" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="img-responsive" src="images/trophy.png"><span class="italic">Outcome</span></td>
+											<td><span class="timeoutcome">Time for Outcome-02:08:00</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+					</div>
+						<div class="bstimeslider">
+							<div id="rightArrow"><img class="" src="images/arrowleft.png"></div>
+								<div id="viewContainer">
+									<div id="tslshow">
+										<div class="bktibx" data-toggle="modal" data-target="#resultlong"><span>00:00 AM</span> <div class="ball">A</div>  </div>
+										<div class="bktibx" data-toggle="modal" data-target="#resultlong2"><span>00:00 PM</span> <div class="ball">B</div> </div>
+										<div class="bktibx"> <span>00:00 AM</span> <div class="ball">C</div></div>
+										<div class="bktibx"> <span>00:00 AM</span> <div class="ball">E</div></div>
+										<div class="bktibx"> <span>00:00 AM</span> <div class="ball">G</div></div>
+										<div class="bktibx"> <span>00:00 AM</span> <div class="ball">H</div></div>
+									 </div>
+								</div>
+								<div id="leftArrow"><img class="" src="images/arrowleft.png"></div>
+						</div>
+					<div class="midinner">
+						<div class="midleft col-3">
+						<div class="spotselect">SPOT </br><span>Selection</span></div>
+						<div class="spotinter" id="spotinter">SPOT <span>A</span><div> <!-- <span for="range" class="spot-input spotdraw count" id="spot_a" data-toggle="modal" data-target="#flipModal"></span> --><input type="" id="spot_a" class="count spot-input" name="qty" value="" data-toggle="modal" data-target="#flipModal"> <!-- <output for="range" id="output">50</output>--></div></div>
+						<div class="spotinter spotintera" id="spotinter2">SPOT <span class="spotb">B</span><div><span class="spot-input spotdraw" id="spotdraw_2"></span><!-- <input type="number" class="count spot-input" name="qty" value="0"> --></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spotc">C</span><div><span class="spot-input spotdraw" id="spotdraw_3"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spotd">D</span><div><span class="spot-input spotdraw" id="spotdraw_4"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spote">E</span><div><span class="spot-input spotdraw" id="spotdraw_5"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spotg">G</span><div><span class="spot-input spotdraw" id="spotdraw_6"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spoth">H</span><div><span class="spot-input spotdraw" id="spotdraw_7"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spotj">J</span><div><span class="spot-input spotdraw" id="spotdraw_8"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spotk">K</span><div><span class="spot-input spotdraw" id="spotdraw_9"></span></div></div>
+						<div class="spotinter spotintera" id="spotinter">SPOT <span class="spotl">L</span><div><span class="spot-input spotdraw" id="spotdraw_10"></span></div></div>
+						</div>
+						<div class="spotsposition col-4">
+							<div class="sportarea">A</div>
+							<div class="sportarea sportareab">B</div>
+							<div class="sportarea sportareac">C</div>
+							<div class="sportarea sportaread">D</div>
+							<div class="sportarea sportareae">E</div>
+							<div class="sportarea sportareaf">L</div>
+							<div class="sportarea sportareag">G</div>
+							<div class="sportarea sportareah">H</div>
+							<div class="sportarea sportareaj">J</div>
+							<div class="sportarea sportareak">K</div>
+						
+						</div>
+						<div class="statstic col-4">
+								<div data-toggle="collapse" data-target="#accordion5" class="statstab clickable accordion-toggle">Statistics <i class="fas fa-angle-down float-right "></i></div>
+							  <table class="table collapse" cellspacing="0" id="accordion5">
+                                    <tbody>
+										<tr>
+											<td class="" colspan="2">
+											Swing
+										</td>
+										</tr>
+										<tr>
+											<td class="yellowstat" colspan="2">Outstanding</td>
+										</tr>
+										<tr>
+											<td class="" colspan="2">
+											Ball
+										</td>
+										</tr>
+										<tr>
+										<td class="yellowstat" colspan="2">2nd Ball</td>
+										</tr>
+										<tr>
+											<td class="" colspan="2">
+											Bowler
+											</td>
+										</tr>
+										<tr>
+										<td class="yellowstat" colspan="2">Fast Bowler</td>
+										</tr>
+										<tr>
+											<td class="" colspan="2">
+											Bowling Hand
+										</td>
+										</tr>
+										<tr>
+										<td class="yellowstat" colspan="2">Right Hand</td>
+										</tr>
+										<tr>
+											<td class="" colspan="2">
+											Bowling Speed
+										</td>
+										</tr>
+										<tr>
+										<td class="yellowstat" colspan="2">150KMPH</td>
+										</tr>
+                                    </tbody>
+                                </table>
+	<!-- 					</div>
+<div class="slidecontainer">
+<input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
+  <button id="minus">-</button>
+  <input id="range" type="range" step="10" value="50">
+  <button id="plus">+</button>
+</div>
+
+-->
+
+					</div>
+					<div class="infobottom">
+					<table class="table" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>Total Qty<span class="totalamt" id="totalqty">&#8377;0/-</span></td>
+											<td class="float-right">Amt.Payable<span class="totalamt" id="totalamt">&#8377;0/-</span></td>
+                                        </tr>
+                                    </tbody>
+                     </table>
+					</div>
+					</div>
+		<div id="button-background" style="">
+		<span class="slide-text" style="">Swipe</span>
+		<div id="slider">
+		<img id="locker" class="material-icons" src="images/swipicon.svg">
+		</div>
+		</div>
+<!--  <div id="button-background">
+	<span class="slide-text">Swipe</span>
+	<div id="slider">
+		<i id="locker" class="material-icons">lock_open</i>
+	</div>
+</div>  -->
+				</section>
+            </div>
+        </div>
+			</div>
+		</div>
+	
+		</div>
+<!-- Modal -->
+<div class="modal fade" id="playlong" tabindex="-1" role="dialog" aria-labelledby="playlongTitle" aria-hidden="true">
+  <div class="modal-dialog playlongialog modal-dialog-centered" role="document">
+    <div class="modal-content playlong">
+      <div class="modal-header playlongheader">	
+        <h5 class="modal-title text-center" id="playlongTitle"><img class="img-responsive awsomhead" src="images/awsomeheading.png"></h5>
+        <!-- <button type="button" class="close playclose awesomeclose" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <!-- <span aria-hidden="true">x</span> -->
+		  <!-- <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i> -->
+        <!-- </button> -->
+      </div>
+      <div class="modal-body hwtp playlong">
+		<p>Spot Selection Confirmed</p>
+		<p><b class="darkbluepop">&#8377;1000 Debited From Retailer 2 Wallet,<br>updated Wallet Balance &#8377;4000</b></p>
+      </div>
+<div class="modal-footer winnerfooter backhom">
+     <button type="button" class="btn btn-secondary greenbtn darkbluepop">  <a href="gameplay.html"> 4:00PM | 15 July 2021</a></button>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="resultlong" tabindex="-1" role="dialog" aria-labelledby="resultlongTitle" aria-hidden="true">
+  <div class="modal-dialog hwtpdialog resultlongialog modal-dialog-centered" role="document">
+    <div class="modal-content resultcontent">
+      <div class="modal-header resultlongheader">
+	   <h5 class="modal-title text-center" id=""><img class="img-responsive awsomhead" src="images/outcome.svg"></h5>
+        <!-- <button type="button" class="close playclose winnerclose" data-dismiss="modal" aria-label="Close"> -->
+         <!-- <!--  <span aria-hidden="true">x</span> -->
+		 <!-- <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i> -->
+        <!-- </button> -->
+      </div>
+      <div class="modal-body hwtp resultlong">
+		 <div class="spotresultball"><span>SPOT</span><div class="resultballa">A</div></div> 
+      </div>
+		<div class="modal-footer winnerfooter">
+        <!-- <button type="button" class="btn btn-secondary greenbtn">Date</br><b class="darkbluepop">12-07-2021</b></button> -->
+        <button type="button" class="btn btn-secondary yellowbtn" data-dismiss="modal" aria-label="Close">Time</br><b class="darkbluepop">12:15 PM</b></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="resultlong2" tabindex="-1" role="dialog" aria-labelledby="resultlongTitle" aria-hidden="true">
+  <div class="modal-dialog hwtpdialog resultlongialog modal-dialog-centered" role="document">
+    <div class="modal-content resultcontent">
+      <div class="modal-header resultlongheader">
+	   <h5 class="modal-title text-center" id=""><img class="img-responsive awsomhead" src="images/outcome.svg"></h5>
+        <!-- <button type="button" class="close playclose winnerclose" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <!-- <span aria-hidden="true">x</span> -->
+		  <!-- <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i> -->
+        <!-- </button> -->
+      </div>
+      <div class="modal-body hwtp resultlong">
+		<div class="spotresultball"><div class="resultballa resultballb">B</div></div>
+      </div>
+	  <div class="modal-footer winnerfooter">
+        <!-- <button type="button" class="btn btn-secondary greenbtn">Date</br><b class="darkbluepop">12-07-2021</b></button> -->
+        <button type="button" class="btn btn-secondary yellowbtn" data-dismiss="modal" aria-label="Close">Time</br><b class="darkbluepop">12:15 PM</b></button>
+      </div>
+  <!--     <div class="modal-footer winnerfooter">
+        <button type="button" class="btn btn-secondary greenbtn">Date<b>12-07-2021</b></button>
+        <button type="button" class="btn btn-secondary yellowbtn">Time<b>12:15 PM</b></button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal modalqty fade" id="flipModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-bottom" role="document">
+    <div class="modal-content slectvalue">
+	 <!-- <button type="button" class="close playclose winnerclose flipclose" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <!-- <span aria-hidden="true">x</span> -->
+		  <!-- <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i> -->
+        <!-- </button> -->
+  <!--     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <!--  <h4 class="modal-title" id="myModalLabel">Modal title</h4> 
+      </div> -->
+      <div class="modal-body">
+	  <div class="spotidenti">Spot <span>A</span> Selected</div>
+		<div class="swiper-container mySwiper">
+		<div class="swiper-wrapper">
+        <div class="swiper-slide">0</div>
+        <div class="swiper-slide">1</div>
+        <div class="swiper-slide">2</div>
+        <div class="swiper-slide">3</div>
+        <div class="swiper-slide">4</div>
+        <div class="swiper-slide">5</div>
+        <div class="swiper-slide">6</div>
+        <div class="swiper-slide">7</div>
+        <div class="swiper-slide">8</div>
+        <div class="swiper-slide">9</div>
+        <div class="swiper-slide">10</div>
+        <div class="swiper-slide">11</div>
+        <div class="swiper-slide">12</div>
+        <div class="swiper-slide">13</div>
+        <div class="swiper-slide">14</div>
+        <div class="swiper-slide">15</div>
+        <div class="swiper-slide">16</div>
+        <div class="swiper-slide">18</div>
+        <div class="swiper-slide">19</div>
+        <div class="swiper-slide">20</div>
+        <div class="swiper-slide">21</div>
+        <div class="swiper-slide">22</div>
+        <div class="swiper-slide">23</div>
+        <div class="swiper-slide">24</div>
+        <div class="swiper-slide">25</div>
+        <div class="swiper-slide">26</div>
+        <div class="swiper-slide">27</div>
+        <div class="swiper-slide">28</div>
+        <div class="swiper-slide">29</div>
+        <div class="swiper-slide">30</div>
+        <div class="swiper-slide">31</div>
+        <div class="swiper-slide">32</div>
+        <div class="swiper-slide">33</div>
+        <div class="swiper-slide">34</div>
+        <div class="swiper-slide">35</div>
+        <div class="swiper-slide">36</div>
+        <div class="swiper-slide">37</div>
+        <div class="swiper-slide">38</div>
+        <div class="swiper-slide">39</div>
+        <div class="swiper-slide">40</div>
+        <div class="swiper-slide">41</div>
+        <div class="swiper-slide">42</div>
+        <div class="swiper-slide">43</div>
+        <div class="swiper-slide">44</div>
+        <div class="swiper-slide">45</div>
+        <div class="swiper-slide">46</div>
+        <div class="swiper-slide">47</div>
+        <div class="swiper-slide">48</div>
+        <div class="swiper-slide">49</div>
+        <div class="swiper-slide">50</div>
+        <div class="swiper-slide">51</div>
+        <div class="swiper-slide">52</div>
+        <div class="swiper-slide">53</div>
+        <div class="swiper-slide">54</div>
+        <div class="swiper-slide">55</div>
+        <div class="swiper-slide">56</div>
+        <div class="swiper-slide">57</div>
+        <div class="swiper-slide">58</div>
+        <div class="swiper-slide">59</div>
+        <div class="swiper-slide">60</div>
+        <div class="swiper-slide">61</div>
+        <div class="swiper-slide">62</div>
+        <div class="swiper-slide">63</div>
+        <div class="swiper-slide">64</div>
+        <div class="swiper-slide">65</div>
+        <div class="swiper-slide">66</div>
+        <div class="swiper-slide">67</div>
+        <div class="swiper-slide">68</div>
+        <div class="swiper-slide">69</div>
+        <div class="swiper-slide">70</div>
+        <div class="swiper-slide">71</div>
+        <div class="swiper-slide">72</div>
+        <div class="swiper-slide">73</div>
+        <div class="swiper-slide">74</div>
+        <div class="swiper-slide">75</div>
+        <div class="swiper-slide">76</div>
+        <div class="swiper-slide">77</div>
+        <div class="swiper-slide">78</div>
+        <div class="swiper-slide">79</div>
+        <div class="swiper-slide">80</div>
+        <div class="swiper-slide">81</div>
+        <div class="swiper-slide">82</div>
+        <div class="swiper-slide">83</div>
+        <div class="swiper-slide">84</div>
+        <div class="swiper-slide">85</div>
+        <div class="swiper-slide">86</div>
+        <div class="swiper-slide">87</div>
+        <div class="swiper-slide">88</div>
+        <div class="swiper-slide">89</div>
+        <div class="swiper-slide">90</div>
+        <div class="swiper-slide">91</div>
+        <div class="swiper-slide">92</div>
+        <div class="swiper-slide">93</div>
+        <div class="swiper-slide">94</div>
+        <div class="swiper-slide">95</div>
+        <div class="swiper-slide">96</div>
+        <div class="swiper-slide">97</div>
+        <div class="swiper-slide">98</div>
+        <div class="swiper-slide">99</div>
+		</div>
+     
+	  
+					<div class="qty">
+                        <span class="minus"></span>
+                        <!-- <input type="number" class="count" name="qty" value="1"> -->
+                        <span class="plus"></span>
+                    </div>
+    </div>
+    
+	<!-- <button type="button" class="btn btn-secondary okbtn" data-dismiss="modal" aria-label="Close">OK</button> -->
+      </div>
+    <!--   <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<!-- <div class="modal modalqty fade" id="flipModalB" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> -->
+  <!-- <div class="modal-dialog modal-bottom" role="document"> -->
+    <!-- <div class="modal-content slectvalue"> -->
+	 <!-- <!-- <button type="button" class="close playclose winnerclose flipclose" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <!-- <!-- <span aria-hidden="true">x</span> --> 
+		  <!-- <!-- <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i> --> 
+        <!-- <!-- </button> --> 
+  <!-- <!--     <div class="modal-header"> -->
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+       <!-- <!--  <h4 class="modal-title" id="myModalLabel">Modal title</h4>  -->
+      <!-- </div> --> 
+      <!-- <div class="modal-body"> -->
+	  <!-- <div class="spotidenti">Spot <span>B</span> Selected</div> -->
+		<!-- <div class="swiper-container mySwiper"> -->
+		<!-- <div class="swiper-wrapper"> -->
+        <!-- <div class="swiper-slide">1</div> -->
+        <!-- <div class="swiper-slide">2</div> -->
+        <!-- <div class="swiper-slide">3</div> -->
+        <!-- <div class="swiper-slide">4</div> -->
+        <!-- <div class="swiper-slide">5</div> -->
+        <!-- <div class="swiper-slide">6</div> -->
+        <!-- <div class="swiper-slide">7</div> -->
+        <!-- <div class="swiper-slide">8</div> -->
+        <!-- <div class="swiper-slide">9</div> -->
+        <!-- <div class="swiper-slide">10</div> -->
+        <!-- <div class="swiper-slide">11</div> -->
+        <!-- <div class="swiper-slide">12</div> -->
+        <!-- <div class="swiper-slide">13</div> -->
+        <!-- <div class="swiper-slide">14</div> -->
+        <!-- <div class="swiper-slide">15</div> -->
+        <!-- <div class="swiper-slide">16</div> -->
+     
+	  <!-- </div> -->
+					<!-- <div class="qty"> -->
+                        <!-- <span class="minus"></span> -->
+                        <!-- <!-- <input type="number" class="count" name="qty" value="1"> --> 
+                        <!-- <span class="plus"></span> -->
+                    <!-- </div>  -->
+    <!-- </div> -->
+	<!-- <!-- <button type="button" class="btn btn-secondary okbtn" data-dismiss="modal" aria-label="Close">OK</button> --> 
+      <!-- </div> -->
+    <!-- <!--   <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      <!-- </div> --> 
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+	
+	<!-- <div id="dropDownSelect1"></div> -->
+	
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!-- 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
+	
+<!--===============================================================================================-->
+	<!-- <script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<!-- <script src="vendor/select2/select2.min.js"></script> -->
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	
+	
+<!--===============================================================================================-->
+	<!-- <script src="vendor/countdowntime/countdowntime.js"></script> -->
+	
+	<!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+	<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min"></script> -->
+	<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+        <!-- Bootstrap Js CDN -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <!-- jQuery Custom Scroller CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+	
+   
+<!--===============================================================================================-->
+	<!-- <script src="js/touchpunch.js"></script> -->
+	<script src="js/main.js"></script>
+	
+	
+<script type="text/javascript">
+            
+			
+	 /* Centering the modal vertically */
+ 
+			
+			//slider//
+			
+				///var slider = document.getElementById("myRange");
+				//var output = document.getElementById("spotdraw");
+				//output.innerHTML = slider.value;
+
+				//slider.oninput = function() {
+				//output.innerHTML = this.value;
+				//}
+				//$(document).delegate('.ui-page', 'touchmove', false);
+				
+				
+		
+
+			//slider//
+			
+			//swipe button//
+
+
+		
+			//swipe button//
+			//owl carasol
+			
+			  //  var swiper = new Swiper(".mySwiper", {
+				// watchSlidesProgress: true,
+            //watchSlidesVisibility: true,
+			//	slidesPerView: 3,
+			//centeredSlides: true,
+       // direction: "vertical",
+	
+        //pagination: {
+          //el: ".swiper-pagination",
+         // clickable: true,
+        //},
+      //});
+	$(document).ready(function(){
+	 $(".modal").on('show.bs.modal', function() {
+	 <!-- $('.spotinter').css('position','relative') -->
+		<!-- $('.spotinter').css('z-index','2051') -->
+	 //$('.spotinter').css('position','relative')
+		//$('.spotinter').css('z-index','2051')
+        setTimeout(function() {
+       var swiper = new Swiper('.swiper-container', {
+		effect: 'default',
+	    direction: "vertical",
+		slidesPerView:6,
+		grabCursor: true,
+		centeredSlides: true,
+		coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+		on: {
+		slideChange: function (swiper) {
+		//var a = $('.swiper-slide-active').text();
+		var active_slide = swiper.realIndex;
+		//console.log(a);
+		$('#spot_a').val(active_slide);
+
+		var sum = 0;
+		$('.count').each(function(){
+		sum += parseFloat(this.value);
+		});
+		$('#totalqty').text(sum);
+
+		var qty = $('#totalqty').text();
+		var tamt = qty * 10;
+		$('#totalamt').text(tamt);
+		//console.log(b);
+		}
+		},
+	   navigation: {
+        nextEl: '.plus',
+        prevEl: '.minus',
+      },
+
+    });
+	
+	
+        }, 180);
+    });
+    });
+			//owl carasol
+			
+			<!-- $(document).ready(function(){ -->
+		   <!-- // $('.count').prop('disabled', true); -->
+				
+				<!-- <!-- var a = $('.swiper-slide-active').text(); --> -->
+				<!-- <!-- var b = Number($('.count').val(a)); --> -->
+				<!-- <!-- alert(a); --> -->
+   			<!-- <!-- $('.spotinter').on('click', function(){ --> -->
+				<!-- <!-- $('#flipModal').modal(); --> -->
+    		<!-- <!-- }); --> -->
+			<!-- $(document).on('click','.plus',function(){ -->
+				<!-- $('.count').val(parseInt($('.count').val()) + 1 ); -->
+				<!-- $('.count').animate(); -->
+    		<!-- }); -->
+        	<!-- $(document).on('click','.minus',function(){ -->
+    			<!-- $('.count').val(parseInt($('.count').val()) - 1 ); -->
+    				<!-- if ($('.count').val() == 0) { -->
+						<!-- $('.count').val(1); -->
+						<!-- $('.count').animate(); -->
+					<!-- } -->
+    	    	<!-- }); -->
+ 		<!-- }); -->
+
+			
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Skill Jito | MY Info</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="overlay"></div>
+	<div class="limiter">
+		<div class="infoinner hcontainer-login100">
+			<div class="wrap-login100s" style="display:block;">
+			 <div class="wrapper">
+            <div class="content">
+                <nav class="navbar navbar-default myinfoheader">
+                    <div class="container-fluid">
+						<div class="infotitle"><a href="home.html" id=""><i id="myinfo" class="fas fa-arrow-left"></i></a>MY Info</div>
+					</div>
+                </nav>
+        </div>
+				
+               <!-- Tabs -->
+<section id="tabs">
+	<div class="container">
+		<!-- <h6 class="section-title h1">Tabs</h6> -->
+		<div class="Mainhelp mainmyinfo">
+			<div class="col-xs-12 ">
+				<form class="form-horizontal" role="form">
+                <div class="form-group">
+                 <!--  <label for="firstName" class="col-sm-3 control-label">FulL Name *</label> -->
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="FulL Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                   <!--  <label for="email" class="col-sm-3 control-label">Email* </label> -->
+                    <div class="col-sm-9">
+                        <input type="Number" id="email" placeholder="Mobile Number" class="form-control" onkeypress="return this.value.length < 10;" oninput="if(this.value.length>=10) { this.value = this.value.slice(0,10); }">
+                    </div>
+                </div>
+               <!--    <div class="form-group">
+                   <label for="password" class="col-sm-3 control-label">Password*</label> -->
+                    <!--  <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+              <div class="form-group">
+                    <!-- <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div> -->
+                <!--  <div class="form-group">
+                   <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control">
+                    </div>
+                </div> -->
+			<!-- 	<div class="form-group">
+                    <!-- <label class="control-label col-sm-3">Gender</label> 
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                               <label class="form-check form-check-inline">
+								<input class="form-check-input gender-input" type="radio" name="gender" value="option1">
+								<span class="form-check-label"> Male </span>
+								</label>
+								<label class="form-check form-check-inline">
+								<input class="form-check-input gender-input" type="radio" name="gender" value="option2">
+								<span class="form-check-label">Female</span>
+								</label>
+							</div>
+                        </div>
+                    </div>
+                </div> -->
+               <!--  <div class="form-group">
+                    <!-- <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label> 
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+                        <!-- <span class="help-block">Your phone number won't be disclosed anywhere </span> 
+                    </div>
+                </div> -->
+				<!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 form-switch">
+                     <span class="form-check-label">Allow SMS Notification</span> 
+						<!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+						<!-- <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"> -->
+						<label class="switch">
+						<input type="checkbox">
+						<span class="sliderveri round"></span>
+						</label>
+                    </div>
+                </div>
+			<!-- 	<div class="form-group">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> 
+                    <div class="col-sm-9">
+                        <input type="text" id="address" placeholder="Address" class="form-control">
+                    </div>
+                </div>
+				 -->
+				<div class="form-grou">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+                    <div class="col-sm-9 selectarea">
+                       <label for="doc-select">Document Type</label> 
+						<select style="outline:none;">
+						<option value="PAN CARD" style="opacity:0.8;">Select Document</option>
+						<option value="PAN CARD" style="">PAN CARD</option>
+						<option value="adhar card">ADHAR CARD</option>
+						<option value="Drivinglicence">DRIVING LICENCE</option>
+						</select>
+                    </div>
+                </div>
+			<!-- 	<div class="form-grou">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9 selectarea">
+                       <!--  <label for="pet-select">City</label> 
+						<select name="country" id="country-select" style="outline:none;">
+						<option value="" style="opacity:0.8;">Country</option>
+						<option value="India">India</option>
+						<option value="SriLanka">SriLanka</option>
+						<option value="thailand">Thailand</option>
+						</select>
+                    </div>-->
+                </div>
+				<div class="form-group selectarea " id="adc" style="display:none;">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+					 <!-- <label class="slectdoc" for="aadhar">Enter Number</label>  -->
+                    <div class="col-sm-9">
+                        <input type="number" id="aadhar" placeholder="Enter Number" class="form-control">
+                    </div>
+                </div>
+				<div class="form-group selectarea " id="pc" style="display:none;">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+					 <label for="pan">Enter Pan Card No.</label> 
+                    <div class="col-sm-9">
+                        <input type="text" id="pan" placeholder="" class="form-control">
+                    </div>
+                </div>
+				<div class="form-group selectarea " id="ps" style="display:none;">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+					   <label for="pass">Enter Licence No.</label> 
+                    <div class="col-sm-9">
+                        <input type="number" id="pass" placeholder="" class="form-control">
+                    </div>
+                </div>
+				<div class="form-group selectarea">
+                    <!-- <label for="lastName" class="col-sm-3 control-label">Last Name</label> -->
+                    <div class="col-sm-9">
+                       <button type="submit" class="logout"><i class="fas fa-power-off"></i>Logout</button>
+					   <button type="submit" class="btn btn-primary btn-block updateprofile">UPDATE PROFILE</button>
+                    </div>
+                </div>
+               
+            </form>
+		</div>
+	</div>
+	</div>
+</section>
+<!-- ./Tabs -->
+       
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	
+	<!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	<script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+				
+				
+
+            });
+function yesnoCheck(that) 
+{
+    if (that.value == "aadhar") 
+    {
+        document.getElementById("adc").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("adc").style.display = "none";
+    }
+    if (that.value == "pan")
+    {
+        document.getElementById("pc").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("pc").style.display = "none";
+    }
+    if (that.value == "pass")
+    {
+        document.getElementById("ps").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("ps").style.display = "none";
+    }
+}
+        </script>
+
+</body>
+</html>

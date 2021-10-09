@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Transaction History</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<style>
+div#nav-all table {
+    border-bottom: 1px solid #CCCCCC;
+}
+div#nav-tabContent td {
+    padding: 0px 0 4px 0;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+     border-top: none; 
+}
+div#nav-tabContent {
+    margin-top: 20px;
+    overflow: auto;
+    height: 550px;
+}
+</style>
+<body>
+	<div class="overlay"></div>
+	<div class="limiter">
+		<div class="infoinner hcontainer-login100">
+			<div class="wrap-login100s" style="display:block;">
+			 <div class="wrapper">
+				<div class="content">
+				<nav class="navbar navbar-default myinfoheader">
+				<div class="container-fluid">
+				<div class="infotitle"><a href="home.html"><i id="myinfo" class="fas fa-arrow-left"></i></a>Transaction History</div>
+				</div>
+				</nav>
+				</div>
+               <!-- Tabs -->
+				<section id="tabs">
+				<div class="container">
+				<!-- <h6 class="section-title h1">Tabs</h6> -->
+				<div class="Mainhelp">
+				<div class="col-xs-12 ">
+				<div class="transhistorytop">
+				<div class="addamt"><img src="images/addmoney.svg" alt="addmoney"><span>Added</span></div>
+				<div class="addamt"><img src="images/wining.svg" alt="wining"><span>Winning</span></div>
+				<div class="addamt"><img src="images/bonusicon.svg" alt="bonus"><span>Bonus</span></div>
+				<div class="addamt"><img src="images/withdrawal.svg" alt="rupee" style="filter: contrast(0.3); width: 35px;margin-top: 10px;"><span>Withdrawal</span></div>
+				</div>
+				 <nav>
+					<div class="nav nav-tabs nav-fill" id="transc-tab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
+					<a class="nav-item nav-link" id="nav-addamt-tab" data-toggle="tab" href="#nav-addamt" role="tab" aria-controls="nav-profile" aria-selected="false">Added Amount</a>
+					<a class="nav-item nav-link" id="nav-wingamt-tab" data-toggle="tab" href="#nav-wingamt" role="tab" aria-controls="nav-profile" aria-selected="false">Winning Amount</a>
+					<a class="nav-item nav-link" id="nav-bonusgamt-tab" data-toggle="tab" href="#nav-bonusgamt" role="tab" aria-controls="nav-profile" aria-selected="false">Bonus Amount</a>
+					<a class="nav-item nav-link" id="nav-withdrawl-tab" data-toggle="tab" href="#nav-withdrawl" role="tab" aria-controls="nav-profile" aria-selected="false">Withdrawal Amount</a>	
+					</div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion" class="clickable accordion-toggle">
+                                            <td><b>Coupon Cashback Rewards</b></td>
+											<td class="plusmoney">+&#8377;25</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Bonus Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion"  class="collapse innerdetail" colspan="2">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value="" download><i class="fas fa-download"></i>Download Invoice</div>
+											</td>
+											<!-- <td></td>
+											<td></td> -->
+										</tr>
+									<!-- 	<tr>
+											<td colspan="2">
+											
+										</td>
+										</tr> -->
+                                    </tbody>
+                                </table>
+								 <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion2" class="clickable accordion-toggle">
+                                            <td><b>Wallet</b></td>
+											<td class="plusmoney">+&#8377;25</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Deposit Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion2"  class="collapse innerdetail" colspan="2">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+											</td>
+											<!-- <td></td>
+											<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+								<table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion3" class="clickable accordion-toggle">
+                                            <td><b>Game Played</b></td>
+											<td class="minusmoney">-&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Debited from Deposit Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion3"  class="collapse innerdetail" colspan="2">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><a href="images/PlayerInvoice-01.jpg" alt="rupee" download><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</a></div>
+											</td>
+											<!-- <td></td>
+											<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+								<table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion4" class="clickable accordion-toggle">
+                                            <td><b>Spin Wheel Bonus</b></td>
+											<td class="plusmoney">+&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Bonus Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion4"  class="collapse innerdetail">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><a href="images/PlayerInvoice-01.jpg" alt="rupee" download><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</a></div>
+									</td>
+										<!-- <td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nav-addamt" role="tabpanel" aria-labelledby="nav-profile-tab">
+                               <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion5" class="clickable accordion-toggle">
+                                            <td><b>Game Played</b></td>
+											<td class="minusmoney">-&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Debited from Deposit Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion5"  class="collapse innerdetail" colspan="2">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+									</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+								<table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion6" class="clickable accordion-toggle">
+                                            <td><b>Spin Wheel Bonus</b></td>
+											<td class="plusmoney">+&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Bonus Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion6"  class="collapse innerdetail" colspan="2">
+												<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+									</td>
+										<!-- <td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nav-wingamt" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion7" class="clickable accordion-toggle">
+                                            <td><b>Coupon Cashback Rewards</b></td>
+											<td class="plusmoney">+&#8377;25</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Bonus Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion7"  class="collapse innerdetail" colspan="2">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+									</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+									<!-- 	<tr>
+											<td colspan="2">
+											
+										</td>
+										</tr> -->
+                                    </tbody>
+                                </table>
+								 <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion8" class="clickable accordion-toggle">
+                                            <td><b>Wallet</b></td>
+											<td class="plusmoney">+&#8377;25</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Deposit Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion8"  class="collapse innerdetail" colspan="2">
+											<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+									</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+                            </div> 
+							<div class="tab-pane fade" id="nav-bonusgamt" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion9" class="clickable accordion-toggle">
+                                            <td><b>Game Played</b></td>
+											<td class="minusmoney">-&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Debited from Deposit Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion9"  class="collapse innerdetail" colspan="2">
+												<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+									</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+								<table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion10" class="clickable accordion-toggle">
+                                            <td><b>Spin Wheel Bonus</b></td>
+											<td class="plusmoney">+&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Bonus Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion10"  class="collapse innerdetail" colspan="2">
+												<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+											</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+							<div class="tab-pane fade" id="nav-withdrawl" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion11" class="clickable accordion-toggle">
+                                            <td><b>Game Played</b></td>
+											<td class="minusmoney">-&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Debited from Deposit Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion11"  class="collapse innerdetail" colspan="2">
+												<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+									</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+								<table class="table" cellspacing="0">
+                                   <!--  <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Employer</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#accordion12" class="clickable accordion-toggle">
+                                            <td><b>Spin Wheel Bonus</b></td>
+											<td class="plusmoney">+&#8377;10</td>
+											<td><i class="fas fa-angle-down float-right "></i></td>
+											
+                                        </tr>
+                                        <tr class="infobtom">
+                                            <td>(Credited to Bonus Amount)</td>
+                                            <td>22 June 2021</td>
+                                        </tr>
+										<tr id="accordion12"  class="collapse innerdetail" colspan="2">
+												<td class="innerdata text-center" colspan="3">
+											<div class="text-left"><p><b>Transaction ID</b></p><span>ASDF01215150610</span></div>
+											<div class="text-left"><p><b>Transaction Date & Time</b></p><span>22June 2021 12:12:09PM</span></div>
+											<div class="downlodinvoicbtn"><input type="submit" value=""><i class="fas fa-download"></i>Download Invoice</div>
+											</td>
+									<!-- 	<td></td>
+										<td></td> -->
+										</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+				</div>
+				</div>
+				</div>
+				</section>
+				<!-- ./Tabs -->
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	
+	 <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- Bootstrap Js CDN -->
+       <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	   <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+					 //$("#myinfo").click(function(){
+					//$(".infoinner").hide(1000);
+					//$(".hcontainer-login100").show(500);
+					//});
+					 $('.accordion-toggle').click(function() {
+            $(this).find('i').toggleClass('fas fa-angle-down fas fa-angle-up');
+        });
+					
+            });
+	
+        </script>
+
+</body>
+</html>

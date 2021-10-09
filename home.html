@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Skill Jeeto</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+<!-- 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity=
+	"sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<style>
+a:not([href]) {
+    color: #666666;
+}</style>
+<body>
+	<div class="overlay"></div> 
+		<div class="limiter" id="loading" style="display:none;">
+		<div class="container-login1001 intromain">
+		<div class="midlogo"><img src="images/intrologo.svg" alt="logo"></div>
+		</div>
+		</div>
+		<div class="hcontainer-login100">
+		<div class="wrap-login100s" style="display:block;">
+		 <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <!-- <div id="dismiss"> -->
+                    <!-- <!-- <i class="glyphicon glyphicon-arrow-left"></i> --> 
+					<!-- <i class="fas fa-angle-left"></i> -->
+                <!-- </div> -->
+                <div class="sidebar-header">
+                <!--    <div class="userimg">
+						 <i class="fas fa-camera"></i> 
+						<form id="form1" runat="server">
+						<input type='file' id="uploaduserimg" onchange="readURL(this);"/>
+						<label id="upload-user-label" for="uploaduserimg" class="control-label">Upload Image*</label>
+						<img id="imageshow" src="images/user.jpg" alt="your image" />
+						</form>
+						 </div> -->
+				   <div class="username">
+						<!--<span>Welcome</span>--> <span class="darkblue">abc@1234</span>
+						<span>+10000000</span>
+				   </div>
+               
+				</div>
+                <ul class="list-unstyled components">
+				 <li class="">
+                        <a href="myinfo.html"><img src="images/myinfo.svg" alt="logo">My Info</a>
+                      <!--   <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul> -->
+                    </li>
+                    <li>
+                      <!--  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-wallet"></i>My Wallet <i class="fas fa-angle-down text-right"></i></a>
+                         <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul> -->
+						 <a href="mybalance.html"><img src="images/menuwallet.svg" alt="mywallet">My Balance <span class="float-right darkblue"><b>&#8377;10,000/-</b></span></a>
+                    </li>
+                    <li>
+                        <a class="" href="withdrawalstatus.html"><img src="images/withdrawal.svg" alt="Withdrawal">Withdrawal Status</a>
+                    </li>
+					<li>
+                        <a class="" href="myselection.html"><img src="images/myselection.svg" alt="myselection">My Selection</a>
+                    </li>
+                    <li>
+                        <a class="border-botom" href="aboutus.html"><img src="images/menuaboutus.svg" alt="aboutus">About Us</a>
+                    </li> 
+					<li>
+                        <a class="" href="#" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-gamepad menuhtp"></i>How to Play</a>
+                    </li>
+					<li>
+                        <a href="helpsupport.html"><img src="images/helpsupport.svg" alt="helpsupport">Help & Support</a>
+                    </li>
+					<li>
+                        <a href="#"><i class="fas fa-info-circle"></i>FAQs</a>
+                    </li>
+                </ul>
+				<!-- <div class="sidebar-bottom">
+                    <a> Version:<span>10.00000</span></a>
+                    <a> Update<span></span></a>
+                </div>  -->
+            </nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+						<!-- <b>MY BALANCE</b> -->
+                            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                               <!--  <i class="glyphicon glyphicon-align-left"></i> -->
+							   <!-- <i class="fas fa-bars"></i>
+                                <span>Open Sidebar</span> -->
+								<div id="nav-icon1" class="nav-icon1">
+								<span></span>
+								<span></span>
+								<span></span>
+								</div>
+                            </button>
+							<div class="user_img userimg"> <!-- <i class="fas fa-camera"></i>  -->
+						<form id="form1" runat="server">
+						<input type='file' id="uploaduserimg" onchange="readURL(this);"/>
+						<label id="upload-user-label" for="uploaduserimg" class="control-label">Upload Image*</label>
+						<img id="imageshow" src="images/user.jpg" alt="your image" />
+						</form></div>
+							<div class="centerlogo_img"><a href="home.html"><img src="images/centerlogo.png" alt="centerlogo"></a></div>
+							<div class="bellicon"><a href="notification.html"><img src="images/bellicon.png" alt="bellicon"><span class="badge">9+</span></a></div>
+							<h3 class="mybal">My Balance 
+							<div class="walletdetail tooltip">	<i class="fas fa-info-circle" data-toggle="tooltip"></i>
+								<p class="wallettext tooltiptext">
+								<span><b>Retailer 2</b></span>
+								</p></div>
+							</h3>
+							<div class="addwallet"><a><span class="">&#8377;10,000/-</span><i id="retaler" class="fas fa-wallet"></i></a></div>
+                        </div>
+                      <!--   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </nav>
+				<figure>
+					<div id="bannerslide" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+							<li data-target="#bannerslide" data-slide-to="0" class="active"></li>
+							<li data-target="#bannerslide" data-slide-to="1"></li>
+							<li data-target="#bannerslide" data-slide-to="2"></li>
+							<li data-target="#bannerslide" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img src="images/AD_Banner_1.jpg" alt="banner">
+							</div>
+							<div class="carousel-item">
+							<img src="images/AD_Banner_2.jpg" alt="banner">
+							</div>
+							<div class="carousel-item">
+							<img src="images/AD_Banner_3.jpg" alt="banner">
+							</div>
+							<div class="carousel-item">
+							<img src="images/AD_Banner_5.jpg" alt="banner">
+							</div>
+							</div>
+							<a class="carousel-control-prev" href="#bannerslide" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#bannerslide" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+							</a>
+							</div>
+				</figure>
+				<section>
+					<div class="main_content col-md-12" style="">
+					<div class="gametittle"><h2>Sports Games</h2></div>
+					<div class="gamescatgry" id="spottheball">
+					<!-- Button trigger modal-->
+					<div class="howtoplay" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-info-circle"></i></div>
+					<div class="playnow"><img src="images/playnow.png" alt="banner"></div>
+					</div> 
+					<!-- <div class="gametittle"><h2>Spot The Ball</h2></div>
+					<div class="gamescatgry gamescatgry2">
+					<div class="howtoplay" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-info-circle"></i></div>
+					</div> 
+					<div class="gametittle"><h2>Sports Games</h2></div>
+					<div class="gamescatgry">
+					<div class="howtoplay" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-info-circle"></i></div>
+					</div> -->
+					
+			<!-- 		<div class="owl-carousel">
+                            <div class="item gamescatgry"> </div>
+                            <div class="item gamescatgry">  </div>    
+							<div class="item gamescatgry"> </div>
+                            <div class="item gamescatgry">  </div>
+                            
+                        </div> -->
+					</div>
+				</section>
+            </div>
+			<footer class="footer" style="">
+            <div class="container">
+                <div class="row" style="letter-spacing: 0px;">
+                    <div class="col-3">
+                        <div class="single-footer-widget" style="">
+                            <h5><span class="footer_logo" style=""><img src="images/centerlogo.png" alt="logo"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-3" style="">
+                        <div class="single-footer-widget">
+                            <h5><span class="footer_text" style=""><b>Affiliate Programme</b></span></h5>
+                            <div style="">
+                                <h6><a style=" " href="#">Become an affiliate</a></h6>
+                                <h6><a style="" href="#">FAQs</a></h6>
+                               
+                                <h6><a style="" href="#">Connect</a></h6>
+                                <h6><a style="" href="#">Location</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget" style="">
+                            <h5><span class="footer_text" style=""><b>Information</b></span></h5>
+                            <div style="">
+                                <h6><a style="" href="#">Game Rules</a></h6>
+                                <h6><a style="" href="#">Terms & Conditions</a></h6>
+                                <h6><a style="" href="#">Privacy Policy</a></h6>
+                                <h6><a style="" href="#">Cookies Policy</a></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="single-footer-widget" style="">
+                            <h5><span class="footer_text" style=""><b>Contact Us</b></span></h5>
+                            <div style="">
+                                <h6><a style="" href="#">Contact Us</a></h6>
+                            </div>            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 social">
+                    <div class="m-0 " style="">
+                       <span>Spot us on:</span>
+					   <a href="#"><i class="fab fa-facebook"></i></a>
+					   <a href="#"><i class="fab fa-twitter-square"></i></a>
+					   <a href="#"><i class="fab fa-telegram"></i></a>
+					   <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+					   <a href="#"><i class="fab fa-instagram"></i></a>
+					   <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+		</div>
+		</div>
+		
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog hwtpdialog modal-dialog-centered" role="document">
+    <div class="modal-content hwtpcontent">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLongTitle"><b>How To Play "SJ SPOT & WIN"</b></h5><i class="fas fa-gamepad"></i>
+        <button type="button" class="close playclose" data-dismiss="modal" aria-label="Close">
+         <!--  <span aria-hidden="true">x</span> -->
+		 <i class="fa fa-close lgn_modal_hwtpclsicon" data-dismiss="modal"></i>
+        </button>
+      </div>
+      <div class="modal-body hwtp">
+		<p> <b>&ldquo;SJ SPOT &amp; WIN&rdquo;</b> is based on the most popular sport in India - Cricket. It is an online game of skill inspired from Cricket.</p>
+
+		<p>The sport of cricket requires immense skill, not just to play but also to judge.</p>
+
+		<p>If you got the skill and the knowledge about cricket, <b>&ldquo;SJ SPOT &amp; WIN&rdquo;</b> is the right place to test your skills.</p>
+
+		<p>It is a time based competition, All a user needs to do is observe the image carefully and Spot/Predict the position of the ball from the provided set of SPOTS on the playing screen.</p>
+
+		<p>A player can also take cues from the stats provided on the playing screen. As these stats and factors are taken into consideration by our <b>&lsquo;AI&rsquo;</b> software systems to provide the Result/Outcome.</p>
+
+		<p> <b>Pro Tip</b> - Multiple Quantities and Spot selections are allowed to better the winning probabilities.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div><!-- Modal -->
+<div class="modal fadeIn" id="walletbal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog walletbalcontent modal-dialog-centered" role="document">
+    <div class="modal-content walletbalcontent">
+      <div class="modal-body walletbal">
+		<div class="transhistorytop mybalancetop walletbaltop">
+				<div id="retailerwallet1" class="addamt totalbalance walletbalamt"><img src="images/rupees.svg" alt="rupee"><span>Retailer 1<i class="fas fa-info-circle"></i></span><strong>&#8377;12,500/-</strong></div>
+				<div id="retailerwallet3" class="addamt totalbalance walletbalamt"><img src="images/rupees.svg" alt="rupee"><span>Retailer 3<i class="fas fa-info-circle infocircle"></i></span><strong>&#8377;13,000/-</strong></div>
+				</div>
+				<div id="retailerwallet2" class="addamt totalbalance walletbalamt" style="display:none;"><img src="images/rupees.svg" alt="rupee"><span>Retailer 2<i class="fas fa-info-circle infocircle"></i></span><strong>&#8377;10,000/-</strong></div>
+				</div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+	
+
+	<!-- <div id="dropDownSelect1"></div> -->
+	
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<!-- 	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+	
+	 <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- Bootstrap Js CDN -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	   <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss,.overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                   $('#nav-icon1').removeClass('open');
+                    $('.overlay').fadeOut();
+                });  
+				
+					
+                $('#sidebarCollapse').on('click', function (){ 
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+				//$('#loading').hide('slow');
+				//$('#loading').delay(400).fadeOut(1000);
+				 document.getElementById("spottheball").onclick = function () {
+				location.href = "gameplay.html";
+				};
+				
+$(".owl-carousel").owlCarousel({
+      autoPlay: 3000,
+      items : 1, // THIS IS IMPORTANT
+      responsive : {
+            480 : { items : 1  }, // from zero to 480 screen width 4 items
+            768 : { items : 2  }, // from 480 screen widthto 768 6 items
+            1024 : { items : 3   // from 768 screen width to 1024 8 items
+            }
+        },
+  });
+  
+  
+  	$('#nav-icon1').on('click', function (){
+		$(this).toggleClass('open');
+          
+	});
+  
+            });
+			
+			
+			
+			//image upload user
+			
+			/*  ==========================================*
+    SHOW UPLOADED IMAGE
+/* ========================================== */
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imageshow')
+                .attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$(function () {
+    $('#uploaduserimg').on('change', function () {
+        readURL(input);
+    });
+});
+
+/*  ==========================================
+    SHOW UPLOADED IMAGE NAME
+* ========================================== */
+var input = document.getElementById( 'uploaduserimg' );
+var infoArea = document.getElementById( 'upload-user-label' );
+
+input.addEventListener( 'change', showFileName );
+function showFileName( event ) {
+  var input = event.srcElement;
+  var fileName = input.files[0].name;
+  infoArea.textContent = 'File name: ' + fileName;
+}
+    
+			//image upload user
+			
+			jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
+  return this.each(function(){
+    var clicks = 0, self = this;
+    jQuery(this).click(function(event){
+      clicks++;
+      if (clicks == 1) {
+        setTimeout(function(){
+          if(clicks == 1) {
+            single_click_callback.call(self, event);
+          } else {
+            double_click_callback.call(self, event);
+          }
+          clicks = 0;
+        }, timeout || 300);
+      }
+    });
+  });
+}
+$('#walletbal').on('hidden.bs.modal', function () {
+	$('.addwallet i').css('color','inherit');
+	$('.addwallet').css('z-index','inherit');
+	$('.mybal').css('z-index','inherit');
+	$('.addwallet a').css('border','1px solid #6d6e70');
+	$('.addwallet span').css('color','#666666');
+	$('.mybal').css('color','#0F45BC');
+  // do something…
+})	
+
+
+$("#retaler").single_double_click(function () {
+	<!-- //debugger;
+  //alert("Try double-clicking me!")
+  $('#walletbal').modal();
+  $('.addwallet i').css('color','#ffd345');
+  $('.addwallet').css('z-index','1051');
+  $('.mybal').css('z-index','1051');
+  $('.addwallet a').css('border','1px solid #ffd345');
+  $('.addwallet span').css('color','#eaf1ff');
+  $('.mybal').css('color','#eaf1ff');
+  $('.walletdetail').css('pointer-events','none');
+  
+}, function () {
+ // alert("Double click detected, I'm hiding")
+ $('#walletbal').modal('hide');
+// $('#retailerwallet2').show();
+$('.walletdetail').css('pointer-events','auto');
+ $('.addwallet span').text('₹12,500/-');
+ $('.walletdetail span b').text('Retailer 1');
+ $('#retailerwallet1 span').text('Retailer 2');
+ $('#retailerwallet1 strong').text('₹10,000/-');
+ 
+ 
+}) 
+ 
+        </script>
+
+</body>
+</html>

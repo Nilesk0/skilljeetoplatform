@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Skill Jeeto</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+		<!-- 	<div id="js-preloader" class="preloader js-preloader flex-center">
+			<div class="dots">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+		</div> -->
+		<div class="limiter1" id="loading" style="">
+		<div class="container-login1001 intromain">
+				<div class="midlogo"><img src="images/intrologo.svg" alt="logo"></div>
+		</div>
+		</div>
+		<div class="container-login100">
+			<div class="toplogo"><img src="images/centerlogo.svg"></div>
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" style="display:block;">
+					 <input type="number" class="form-control mt-3 input100" placeholder="+91 8828 0868 00" onkeypress="return this.value.length < 10;" oninput="if(this.value.length>=10) { this.value = this.value.slice(0,10); }"/>
+					 <button type="button" id="login100" class="btn lgn_modal_genrotpbtn login100-form-btn validate-form" id="">Generate<br>OTP</button>
+				
+				<div class="loginbottom">
+				<div class="infologin"><img src="images/players.png"><div class="textbotm"><strong>30,00,000+</strong><span>Real Players</span></div></div>
+				<div class="infologin"><img src="images/secure.png"><div class="textbotm"><strong>100%</strong><span>Secure & Legal</span></div></div>
+				<div class="infologin"><img src="images/withdrawls.png"><div class="textbotm"><strong>Withdrwals</strong><span>Safe & Instant</span></div></div>
+				<div class="infologin"><img src="images/adult.png"><div class="textbotm"><strong>18+</strong><span>Age Eligibility</span></div></div>
+				<div class="infologin"><img src="images/aigf.png"><div class="textbotm"><strong>Member</strong><span>AIGF</span></div></div>
+				</div>
+				</form>
+			<div class="confirmcard p-2 text-center" style="display:none;">
+			<div class="otptext">OTP has been sent to your mobile number<br><span>+91 985659 9845</span></div>
+            <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> <input class="m-2 text-center form-control rounded" type="number" id="first" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="number" id="second" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="number" id="third" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="number" id="fourth" maxlength="1" /></div>
+			<div class="resend otp"><a id="timer"></a></div>
+            <div class="mt-1"> <button class="btn px-4 validate">Confirm Otp</button></div>
+			<div class="content d-flex justify-content-center align-items-center"><span>Didn't get the code?</span></div>
+			<div class="para"><p><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>By Registering,You agree to our <br> <a>Terms Of Services</a> & <a>Privacy Policy</a> </p></div>
+			</div>
+			</div>
+		</div>
+	
+<!-- Modal -->
+<!--forgot password-->
+  <!-- The Modal -->
+  <div class="modal fade" id="forgotpaswrd">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header lgn_modal_frgtheaddiv">
+ <span class="lgn_modal_frgtheadtxt">Forgot Password</span>
+          <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i>
+        </div>
+       
+        <!-- Modal body -->
+        <div class="modal-body p-2">
+          <span class="lgn_modal_dntrtxt">Dont remember your password ? we will send you OTP to reset the same.</span>
+          <input type="text" class="form-control mt-3 input100" id="" placeholder="Email ID / Mobile No." required />
+        </div>
+       
+        <!-- Modal footer -->
+        <div class="modal-footer lgn_modal_frgtfootdiv">
+<button type="button" class="btn lgn_modal_genrotpbtn login100-form-btn" id="" data-toggle="modal" data-target="#otpdetails" data-dismiss="modal">Generate OTP</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="otpdetails">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+     
+        <!-- Modal Header -->
+        <div class="modal-header lgn_modal_frgtheaddiv">
+ <span class="lgn_modal_frgtheadtxt">OTP Details</span>
+          <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i>
+        </div>
+       
+        <!-- Modal body -->
+        <div class="modal-body p-2">
+          <span class="lgn_modal_dntrtxt">The OTP will expire in 10 minutes. OTP send to you at 9856489658</span>
+          <input type="text" class="form-control mt-3 input100" id="" placeholder="Enter OTP" required />
+        </div>
+       
+        <!-- Modal footer -->
+        <div class="modal-footer lgn_modal_frgtfootdiv">
+<button class="btn lgn_modal_genrotpbtn login100-form-btn" id="" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Submit</button>
+<p class="lgn_modal_dntrtxt">If OTP is not received or expired Kindly click on resend OTP</p>
+<button class="btn lgn_modal_submotpbtn resendbtn" id="">Re-send OTP</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+     
+        <!-- Modal Header -->
+        <div class="modal-header lgn_modal_frgtheaddiv">
+ <span class="lgn_modal_frgtheadtxt">Reset Password</span>
+          <i class="fa fa-close lgn_modal_frgtclsicon" data-dismiss="modal"></i>
+        </div>
+       
+        <!-- Modal body -->
+        <div class="modal-body p-2">
+          <input type="password" class="form-control mt-3 input100" id="" placeholder="New Password" required />
+          <input type="password" class="form-control mt-3 input100" id="" placeholder="Re Enter New Password" required />
+        </div>
+       
+        <!-- Modal footer -->
+        <div class="modal-footer lgn_modal_frgtfootdiv">
+			<button class="btn lgn_modal_genrotpbtn login100-form-btn" id="" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Submit</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+     
+        <!-- Modal Header -->
+        <div class="modal-header border-0 p-2">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close cplayr_modal_clsicon"></i></button>
+        </div>
+       
+        <!-- Modal body -->
+        <div class="modal-body p-2">
+          <span>Your Password has been changed successfully.</span><br/>
+        </div>
+       
+        <!-- Modal footer -->
+        <div class="modal-footer border-0">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+	<!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/jquery.preloadinator.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+<script type="text/javascript">
+	<!-- $('#js-preloader').preloadinator({
+				//minTime: 1000
+		//	}); 
+		
+	$(document).ready(function () {
+	$('#loading').fadeOut(1500);
+		//$('#loading').delay(800).fadeOut(1000);
+		// Run code
+		$('#login100').click(function(){
+		//debugger;
+		//alert('dsd');
+		//$('#js-preloader').fadeIn();
+		//$('#js-preloader').fadeOut(500);
+		$('.container-login100').css('background-size','100% 69.7%');
+		$('.container-login100').css('transition-timing-function','ease-out');
+		//$('.container-login100').css('background-position-y','-190px');
+		$('.login100-form').fadeOut(300);
+		$('.confirmcard').fadeIn(800);
+		
+		
+let timerOn = true;
+function timer(remaining) {
+  var m = Math.floor(remaining / 60);
+  var s = remaining % 60;
+  
+  m = m < 10 ? '0' + m : m;
+  s = s < 10 ? '0' + s : s;
+  document.getElementById('timer').innerHTML = m + ':' + s;
+  remaining -= 1;
+  
+  if(remaining >= 0 && timerOn) {
+    setTimeout(function() {
+        timer(remaining);
+    }, 1000);
+    return;
+  }
+
+  if(!timerOn) {
+  $('.text-decoration-none').click(function(){
+		timer();
+		});
+    // Do validate stuff here
+    return;
+	
+  }
+  
+  // Do timeout stuff here
+  //alert('Timeout for otp');
+   $("#timer").text("Resend otp");
+   $(".resend").css('left','66px');
+  
+}
+	
+
+timer(30);
+		});	
+		
+		$('.validate').click(function(){
+		location.href = "home.html";
+		});
+		
+		//jump next input
+		$(".rounded").keyup(function () {
+			if (this.value.length == this.maxLength) {
+			$(this).next('.rounded').focus();
+			$('.validate').css('opacity','1');
+			//location.href = "home.html";
+			}
+	
+	
+});
+		//jump next input
+
+		});
+		
+		
+
+</script>
+</body>
+</html>
